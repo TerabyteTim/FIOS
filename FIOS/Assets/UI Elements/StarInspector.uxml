@@ -1,0 +1,7 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
+    <ui:Label text="Star Instance Settings" style="font-size: 20px; -unity-font-style: bold; -unity-text-align: middle-center; border-bottom-color: rgba(128, 128, 128, 255); border-bottom-width: 2px; margin-bottom: 2px;" />
+    <uie:PropertyField name="StarColor" label="Star Color" tooltip="Color of the star" binding-path="starCol" />
+    <uie:PropertyField name="StarRadius" label="Star Radius" tooltip="Radius in meters of the star&apos;s renderer" binding-path="starRadius" tabindex="1" />
+    <uie:PropertyField name="GravityRadius" label="Gravity Radius" tooltip="Radius in meters of the gravity well around this star" binding-path="gravRadius" tabindex="2" />
+    <uie:PropertyField name="StarName" label="Star Name" tooltip="Name of this star" binding-path="starName" tabindex="3" />
+</ui:UXML>

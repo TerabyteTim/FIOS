@@ -1,0 +1,20 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
+    <ui:Label text="Star Preset Wizard" style="left: auto; align-items: center; -unity-text-align: upper-center; -unity-font-style: bold; font-size: 20px; border-bottom-width: 2px; border-bottom-right-radius: 0; border-top-right-radius: 0; border-bottom-left-radius: 0; border-bottom-color: rgb(128, 128, 128); height: 25px; max-height: 25px; min-height: 25px;" />
+    <ui:IMGUIContainer name="SettingsEditor" style="height: 85px; border-top-width: 0; border-bottom-width: 0; border-bottom-color: rgb(128, 128, 128); border-top-color: rgb(128, 128, 128); max-height: 85px; min-height: 85px; position: relative; padding-top: 2px; flex-shrink: 0;">
+        <uie:ColorField label="Star Color" value="#FFF6A2FF" show-alpha="false" tooltip="Main color of the star object" name="StarColor" style="top: auto;" />
+        <uie:FloatField label="Star Radius" value="1" name="StarRadius" tooltip="Radius in meters of the star object" tabindex="1">
+            <ui:Label text="m" name="unitlabel" style="font-size: 8px; -unity-text-align: lower-center;" />
+        </uie:FloatField>
+        <uie:FloatField label="Gravity Well Radius" value="2" name="GravityRadius" tooltip="Radius in meters of the star&apos;s gravity well" tabindex="2">
+            <ui:Label text="m" name="unitlabel" style="font-size: 8px; -unity-text-align: lower-center;" />
+        </uie:FloatField>
+        <ui:TextField picking-mode="Ignore" label="Star Name" value="A Faulty Star" text="A Faulty Star" name="StarName" tooltip="Name for the star" tabindex="3" max-length="25" />
+    </ui:IMGUIContainer>
+    <ui:Label text="Star name in use. Existing preset will be overwritten" name="BadNameWarning" style="display: none; -unity-text-align: middle-center; font-size: 10px; -unity-font-style: italic; color: rgb(255, 255, 0); background-color: rgb(0, 0, 0); height: 15px; max-height: 15px; min-height: 15px;" />
+    <ui:Label text="Star name is required!" name="EmptyNameError" style="display: none; -unity-text-align: middle-center; font-size: 10px; -unity-font-style: italic; color: rgb(255, 0, 0); background-color: rgb(0, 0, 0); height: 15px; max-height: 15px; min-height: 15px;" />
+    <ui:Button text="Create New Preset" name="CreatePresetButton" tooltip="Create a new preset from the above settings and add it to our list of presets for the project" tabindex="4" style="border-top-color: rgb(48, 48, 48); border-top-width: 1px; max-height: 20px; min-height: 20px; height: 20px;" />
+    <ui:Label text="Presets" style="font-size: 16px; -unity-text-align: middle-center; border-top-width: 2px; border-top-color: rgb(128, 128, 128); border-bottom-width: 2px; border-bottom-color: rgb(128, 128, 128); -unity-font-style: bold; height: 25px; max-height: 25px; min-height: 25px; padding-top: 4px; position: relative; left: auto; right: auto; top: auto; -unity-slice-top: 0;" />
+    <ui:ListView focusable="true" name="PresetList" style="max-height: none; height: 238px; border-left-color: rgb(128, 128, 128); border-right-color: rgb(128, 128, 128); border-top-color: rgb(128, 128, 128); border-bottom-color: rgb(128, 128, 128); border-left-width: 2px; border-right-width: 2px; border-top-width: 0; border-bottom-width: 2px; min-height: auto; justify-content: flex-start; bottom: auto; position: relative; top: auto; left: auto; right: auto; flex-grow: 0; flex-basis: auto; flex-shrink: 0; flex-direction: column-reverse; align-items: stretch; flex-wrap: nowrap;" />
+    <ui:Button text="Delete Preset" name="DeletePresetButton" tooltip="Adds the currently selected preset to the scene" tabindex="5" style="justify-content: flex-end; align-items: stretch; bottom: 0; position: relative; left: auto; top: auto; right: auto; max-height: 20px; min-height: 20px; height: 20px;" />
+    <ui:Button text="Add Preset to Scene" name="AddPresetToSceneButton" tooltip="Adds the currently selected preset to the scene" tabindex="6" style="justify-content: flex-end; align-items: stretch; bottom: 0; position: relative; left: auto; top: auto; right: auto; max-height: 20px; min-height: 20px; height: 20px;" />
+</ui:UXML>

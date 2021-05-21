@@ -1,0 +1,6 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
+    <ui:Button text="Open Star Preset Wizard" name="OpenWizard" style="height: 30px;" />
+    <ui:Label text=" " />
+    <ui:Button text="Save Presets to JSON" name="SavePresets" style="height: 30px;" />
+    <ui:Button text="Load Presets from JSON" name="LoadPresets" style="height: 30px; padding-top: 1px; padding-bottom: 1px;" />
+</ui:UXML>
